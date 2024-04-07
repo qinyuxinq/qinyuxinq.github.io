@@ -3,47 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>专业经历和项目展示</title>
+    <title>个人简介及专业经历</title>
     <style>
         body { font-family: Arial, sans-serif; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
         img, video { max-width: 100%; height: auto; }
-        .section { margin-top: 20px; }
-        h2 { color: #017572; }
+        .section { margin-top: 30px; }
+        h1, h2 { color: #017572; }
+        h1 { text-align: center; } /* 将h1标题居中 */
+        .personal-info, .education {text-align: center; margin-top: 10px;}
+        .personal-info p, .education p {margin: 5px 0; }
+        .images-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* 设置图片之间的间隔 */
+            flex-wrap: wrap; /* 当不足以放下所有图片时换行 */
+        }
+        .image-container {
+            /* 根据需要调整每个图片容器的宽度，下例中每个容器宽度为30% */
+            width: 30%;
+        }
+        .images-row2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* 设置图片之间的间隔 */
+            flex-wrap: wrap; /* 当不足以放下所有图片时换行 */
+        }
+        .image-container2 {
+            /* 根据需要调整每个图片容器的宽度，下例中每个容器宽度为30% */
+            width: 22%;
+        }
+        .images-row3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* 设置图片之间的间隔 */
+            flex-wrap: wrap; /* 当不足以放下所有图片时换行 */
+        }
+        .image-container3 {
+            /* 根据需要调整每个图片容器的宽度，下例中每个容器宽度为30% */
+            width: 45%;
+        }
     </style>
 </head>
 
 <body>
 
 <div class="container">
-    <h1>我的专业经历和项目</h1>
+    <h1>秦雨欣</h1>
+    
+    <!-- 个人信息 -->
+    <div class="personal-info">
+        <p>176-0042-0120 || qinyuxin22020@163.com || 1997-07-03</p>
+    </div>
+
+
+</div>
+
+<div class="container">
+    <h1>AIGC相关项目</h1>
     
     <!-- 经验 #1 -->
     <div class="section">
-        <h2>自动化作弊攻防演练 | 阿里-智能信息</h2>
-        <p>[描述] 调研序列生成模型 SeqGan，结合强化学习与生成对抗网络...</p>
-        <img src="path-to-your-image.jpg" alt="自动化作弊攻防演练项目图片">
-        <video controls>
-            <source src="path-to-your-video.mp4" type="video/mp4">
-            对不起，您的浏览器不支持内嵌视频播放。
-        </video>
+        <h2>商品主图背景替换 | 阿里-智能信息</h2>
+        <p>流程包含：SDXL ControlNet，超分辨率重建、深度估计、自动抠图、LLM生成Prompt，图片主体描述，交互式分割；基于AnimateDiff支持合成动图，自研并构建了高保真的Img2vid Inpainting流程</p>
+
+        <div class="images-row">
+            <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1704336223192-6984c092-fe63-4a8c-ae4f-60e65b7266ad.webp" alt="商品主图背景替换示例1">
+            </div>
+            <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1710392263702-55a9600b-9251-49e3-8916-a41331e49ab6.webp" alt="商品主图背景替换示例3">
+            </div>
+            <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1710392230165-fa92b375-4197-4a37-aa63-7fca991634d1.webp" alt="商品主图背景替换示例2">
+            </div>
+            <!-- 可以继续添加更多图片 -->
+        </div>
+        <div class="images-row">
+            <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1710406894963-ab873c02-5bc7-4dcf-a5cc-f50f5c5b054f.gif" alt="商品主图背景替换示例1">
+            </div>
+           <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1710392277751-3419081f-19a2-41ea-883a-f8cd01dd5889.gif" alt="商品主图背景替换示例3">
+            </div>
+            <div class="image-container">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/background/1710392237358-7a0d52cf-3227-4bbf-ad3d-58d69cba14bd.gif" alt="商品主图背景替换示例2">
+            </div>
+        </div>
+
     </div>
-    
-    <!-- 经验 #2 -->
+
+
+<!-- 经验 #2 -->
     <div class="section">
-        <h2>大规模异常商品图检测 | 阿里-智能信息</h2>
-        <p>[描述] 天池比赛ICDM 2022大规模电商图上的风险商品检测前10...</p>
-        <img src="path-to-another-image.jpg" alt="异常商品图检测项目图片">
-        <video controls>
-            <source src="path-to-another-video.mp4" type="video/mp4">
-            对不起，您的浏览器不支持内嵌视频播放。
-        </video>
+        <h2>场景化Diffusion构建 | 阿里-智能信息</h2>
+        <p>收集二次元古风图片对SD 1.5全模型finetuning，为小说行业提供广告素材库</p>
+
+        <div class="images-row">
+            <div class="image-container2">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/3174_32ede0e6a8ac8dcefb3b7454cc744207.png" alt="商品主图背景替换示例1">
+            </div>
+            <div class="image-container2">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/3492_2450f7e1f59595db951cb4182c0f56b5.png" alt="商品主图背景替换示例3">
+            </div>
+            <div class="image-container2">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/441_0b016cd719169ba9eb2f1eab2145c376.png" alt="商品主图背景替换示例2">
+            </div>
+            <div class="image-container2">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/962_38483c1477db0ad64317c046916f0f28.png" alt="商品主图背景替换示例2">
+            </div>
+            <!-- 可以继续添加更多图片 -->
+        </div>
+
+        <p>收集种植牙、牙齿矫正等图片采用Lora的方式对SDXL训练，配合LLM生成文案合成图片模板，为广告主提供几乎零成本的素材生成方案</p>
+
+        <div class="images-row">
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/1692784324229-aff3f96b-4e1f-4394-b904-9aceedae6017 (1).webp" alt="商品主图背景替换示例1">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/1710493842093-449666cd-d06c-45a5-b5b3-6999d16d5c82.webp" alt="商品主图背景替换示例3">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/2.png" alt="商品主图背景替换示例2">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/finetune/1.png" alt="商品主图背景替换示例2">
+            </div>
+            <!-- 可以继续添加更多图片 -->
+        </div>
+
+<!-- 经验 #3 -->
+    <div class="section">
+        <h2> 图片延展OutPainting | 阿里-智能信息</h2>
+        <p>通过一致性Padding、文字去除、多模型推理、泊松融合等预处理和后处理方法优化SDXL Inpainting Pipeline，提升了包括9:16->16:9的极端尺寸下合格率，满足广告主不同场景的需求</p>
+
+        <div class="images-row">
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/outpainting/1709790708113-b7e64b84-e930-44d4-9b85-ab63bc85db47.webp" alt="商品主图背景替换示例1">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/outpainting/1709791322531-7bdfc0c0-fd53-423e-bc82-ee81ab0dc01a.webp" alt="商品主图背景替换示例3">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/outpainting/1709790701943-246632d2-61c7-4d5d-aa1b-4085ae8c7a33.png" alt="商品主图背景替换示例2">
+            </div>
+            <div class="image-container3">
+                <img src="http://content-understand-strategy.sm.cn/qinyuxin/temp/personal/outpainting/1709791361203-1f442c0d-3c69-4a2a-a214-73c79dece762.png" alt="商品主图背景替换示例2">
+            </div>
+            <!-- 可以继续添加更多图片 -->
+        </div>
+
     </div>
-    
-    <!-- 更多经验和项目可以按上述格式添加 -->
-    
+
 </div>
 
 </body>
 </html>
-
